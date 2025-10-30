@@ -20,7 +20,7 @@
         <ul>
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
-          <li><a href="#ipk">Nilai Saya</a></li>
+          <li><a href="#ipk">IPK</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
       </nav>

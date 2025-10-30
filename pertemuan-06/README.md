@@ -6,9 +6,9 @@ NIM: 2511500056<br>
 <br>
 belajar:<br>
 <ol>
-<li>echo di hello.php<li>
-<li>copy file index.html,style.css,script.js pertemuan-05 ke pertemuan-06<li>
-<li>copy index.html menjadi index.php<li>
-<li>Variabel php section about<li>
-<li>membuat section ipk dan styling section ipk<li>
+<li>echo di hello.php</li>
+<li>copy file index.html,style.css,script.js pertemuan-05 ke pertemuan-06</li>
+<li>copy index.html menjadi index.php</li>
+<li>Variabel php section about</li>
+<li>membuat section ipk dan styling section ipk</li>
 </ol>

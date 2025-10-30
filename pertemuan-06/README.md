@@ -8,4 +8,5 @@ belajar:<br>
 <ol>
 <li>echo di hello.php<li>
 <li>copy file index.html,style.css,script.js pertemuan-05 ke pertemuan-06<li>
+<li>copy index.html menjadi index.php<li>
 </ol>

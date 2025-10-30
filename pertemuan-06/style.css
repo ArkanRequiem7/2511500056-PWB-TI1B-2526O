@@ -10,7 +10,6 @@ body {
   line-height: 1.5;
 }
 
-/* ===== HEADER ===== */
 header {
   background: #003366;
   color: #fff;
@@ -59,7 +58,6 @@ header li a:active {
   cursor: pointer;
 }
 
-/* ===== SECTION STYLE UMUM ===== */
 #home,
 #about,
 #contact,
@@ -88,7 +86,6 @@ header li a:active {
   text-align: justify;
 }
 
-/* ===== STYLE KHUSUS SECTION ABOUT & IPK ===== */
 #about p,
 #ipk p {
   display: flex;
@@ -109,7 +106,6 @@ header li a:active {
   flex-shrink: 0;
 }
 
-/* ===== FORM KONTAK ===== */
 #contact label {
   display: flex;
   justify-content: flex-start;
@@ -140,7 +136,6 @@ header li a:active {
   box-sizing: border-box;
 }
 
-/* ===== BUTTON ===== */
 #contact button {
   margin-top: 10px;
   display: inline-block;
@@ -176,7 +171,6 @@ header li a:active {
   transform: translateY(-1px);
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: #222;
   color: #aaa;
@@ -184,7 +178,6 @@ footer {
   padding: 10px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;

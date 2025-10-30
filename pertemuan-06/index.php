@@ -35,14 +35,14 @@
       </section>
       <section id="about">
         <?php
-        $NIM = "0344300002";
         $nim = "2511500056";
         $nama = "Muhammad Arkan Ramadhan";
+        $tempatlahir = "Mentok";
         ?>
         <h2>Tentang Saya</h2>
         <p><strong>NIM:</strong> <?php echo $nim ?></p>
         <p><strong>Nama Lengkap:</strong> <?php echo $nama ?> &#128526;</p>
-        <p><strong>Tempat Lahir:</strong>Mentok.</p>
+        <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
         <p><strong>Tanggal Lahir:</strong>September 2007.</p>
         <p>
           <strong>Hobby:</strong>Mancing, Main game, Baca novel, Menggambar,

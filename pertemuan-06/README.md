@@ -14,4 +14,5 @@ belajar:<br>
 <li>buat skrip menghitung nilai akhir 1 sampai 5</li>
 <li>buat kondisi kehadiran di bawah 70, grade = E</li>
 <li>buat kondisi status berdasarkan grade</li>
+<li>hitung bobot 1 sampai 5</li>
 </ol>

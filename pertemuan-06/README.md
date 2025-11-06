@@ -5,10 +5,8 @@ saya Muhammad Arkan ramadhan<br>
 NIM: 2511500056<br>
 <br>
 belajar:<br>
-<ol>
-<li>echo di hello.php</li>
-<li>copy file index.html,style.css,script.js pertemuan-05 ke pertemuan-06</li>
-<li>copy index.html menjadi index.php</li>
-<li>copy section about menjadi section ipk</li>
-<li>5x5 Variabel matakuliah</li>
+<li>hello.php</li>
+<li>index.php</li>
+<li>copy section#about, rename jadi section#ipk</li>
+<li>5x5 variabel matakuliah</li>
 </ol>

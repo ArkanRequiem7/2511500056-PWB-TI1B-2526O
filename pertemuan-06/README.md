@@ -13,4 +13,5 @@ belajar:<br>
 <li>memindahkan section#ipk di posisi yang diinginkan</li>
 <li>buat skrip menghitung nilai akhir 1 sampai 5</li>
 <li>buat kondisi kehadiran di bawah 70, grade = E</li>
+<li>buat kondisi status berdasarkan grade</li>
 </ol>

@@ -74,8 +74,8 @@
 
         $sksMatkul1 = 4;
         $sksMatkul2 = 2;
-        $sksMatkul3 = 3;
-        $sksMatkul4 = 3;
+        $sksMatkul3 = 6;
+        $sksMatkul4 = 5;
         $sksMatkul5 = 3;
 
         $nilaiHadir1 = 90; $nilaiTugas1 = 60; $nilaiUTS1 = 80; $nilaiUAS1 = 70;
@@ -110,8 +110,9 @@
           $grade1 = "C-";
         } elseif ($nilaiAkhir1 >= 45) {
           $grade1 = "D";
-        } else {
+        } elseif ($nilaiAkhir1 >= 40) {
           $grade1 = "E";
+        } elseif ($nilaiAkhir1 >= 35) {
         }
 
         if ($nilaiHadir2 < 70) {
@@ -133,9 +134,10 @@
         } elseif ($nilaiAkhir2 >= 50) {
           $grade2 = "C-";
         } elseif ($nilaiAkhir2 >= 45) {
-          $grade2 = "D";
-        } else {
-          $grade2 = "E";
+          $grade1 = "D";
+        } elseif ($nilaiAkhir1 >= 40) {
+          $grade1 = "E";
+        } elseif ($nilaiAkhir1 >= 35) {
         }
 
         if ($nilaiHadir3 < 70) {
@@ -157,9 +159,10 @@
         } elseif ($nilaiAkhir3 >= 50) {
           $grade3 = "C-";
         } elseif ($nilaiAkhir3 >= 45) {
-          $grade3 = "D";
-        } else {
-          $grade3 = "E";
+          $grade1 = "D";
+        } elseif ($nilaiAkhir1 >= 40) {
+          $grade1 = "E";
+        } elseif ($nilaiAkhir1 >= 35) {
         }
 
         if ($nilaiHadir4 < 70) {
@@ -181,9 +184,10 @@
         } elseif ($nilaiAkhir4 >= 50) {
           $grade4 = "C-";
         } elseif ($nilaiAkhir4 >= 45) {
-          $grade4 = "D";
-        } else {
-          $grade4 = "E";
+          $grade1 = "D";
+        } elseif ($nilaiAkhir1 >= 40) {
+          $grade1 = "E";
+        } elseif ($nilaiAkhir1 >= 35) {
         }
 
         if ($nilaiHadir5 < 70) {
@@ -205,9 +209,10 @@
         } elseif ($nilaiAkhir5 >= 50) {
           $grade5 = "C-";
         } elseif ($nilaiAkhir5 >= 45) {
-          $grade5 = "D";
-        } else {
-          $grade5 = "E";
+          $grade1 = "D";
+        } elseif ($nilaiAkhir1 >= 40) {
+          $grade1 = "E";
+        } elseif ($nilaiAkhir1 >= 35) {
         }
 
         switch ($grade1) {

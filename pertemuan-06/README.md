@@ -16,4 +16,5 @@ belajar:<br>
 <li>buat kondisi status berdasarkan grade</li>
 <li>hitung bobot 1 sampai 5</li>
 <li>hitung total bobot dan hitung total sks</li>
+<li>hitung IPK</li>
 </ol>

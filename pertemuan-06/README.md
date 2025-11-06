@@ -10,4 +10,5 @@ belajar:<br>
 <li>copy section#about, rename jadi section#ipk</li>
 <li>5x5 variabel matakuliah</li>
 <li>5x5 variabel proses dan hasil</li>
+<li>memindahkan section#ipk di posisi yang diinginkan</li>
 </ol>

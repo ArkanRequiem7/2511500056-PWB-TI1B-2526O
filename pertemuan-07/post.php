@@ -153,9 +153,9 @@
           $grade2 = "C-";
         } elseif ($nilaiAkhir2 >= 45) {
           $grade1 = "D";
-        } elseif ($nilaiAkhir1 >= 40) {
+        } elseif ($nilaiAkhir2 >= 40) {
           $grade1 = "E";
-        } elseif ($nilaiAkhir1 >= 35) {
+        } elseif ($nilaiAkhir2 >= 35) {
         }
 
         if ($nilaiHadir3 < 70) {
@@ -178,9 +178,9 @@
           $grade3 = "C-";
         } elseif ($nilaiAkhir3 >= 45) {
           $grade1 = "D";
-        } elseif ($nilaiAkhir1 >= 40) {
+        } elseif ($nilaiAkhir3 >= 40) {
           $grade1 = "E";
-        } elseif ($nilaiAkhir1 >= 35) {
+        } elseif ($nilaiAkhir3 >= 35) {
         }
 
         if ($nilaiHadir4 < 70) {
@@ -203,9 +203,9 @@
           $grade4 = "C-";
         } elseif ($nilaiAkhir4 >= 45) {
           $grade1 = "D";
-        } elseif ($nilaiAkhir1 >= 40) {
+        } elseif ($nilaiAkhir4 >= 40) {
           $grade1 = "E";
-        } elseif ($nilaiAkhir1 >= 35) {
+        } elseif ($nilaiAkhir4 >= 35) {
         }
 
         if ($nilaiHadir5 < 70) {
@@ -228,9 +228,9 @@
           $grade5 = "C-";
         } elseif ($nilaiAkhir5 >= 45) {
           $grade1 = "D";
-        } elseif ($nilaiAkhir1 >= 40) {
+        } elseif ($nilaiAkhir5 >= 40) {
           $grade1 = "E";
-        } elseif ($nilaiAkhir1 >= 35) {
+        } elseif ($nilaiAkhir5 >= 35) {
         }
 
         switch ($grade1) {

@@ -10,3 +10,4 @@ Hari ini, Rabu 05.Nov.2025 saya belajar:<br>
   <li>isi get_proses.php</li>
   <li>menampilkan session dari get_proses.php ke get.php</li>
   <li>redirect dari get_proses.php ke get.php</li>
+  <li>copy paste get.php dan get_proses.php menjadi post.php dan post_proses.php</li>

@@ -15,7 +15,6 @@
     $sespesan = $_SESSION["pesan"];
   endif;
   ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -336,10 +335,10 @@
         ?>
       </section>
 
-
       <section id="contact">
         <h2>Kontak Kami</h2>
         <form action="post_proses.php" method="POST">
+          
           <label for="txtNama">
             <span>Nama:</span>
             <input

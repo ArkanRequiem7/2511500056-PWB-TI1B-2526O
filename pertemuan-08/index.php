@@ -1,20 +1,20 @@
 <?php
 session_start();
 
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
+$nim = $_SESSION["nim"] ?? "2511500056";
+$nama = $_SESSION["nama"] ?? "Muhammad Arkan Ramadhan ";
+$tempatlahir = $_SESSION["tempatlahir"] ?? "Mentok";
+$tanggallahir = $_SESSION["tanggallahir"] ?? "30 September 2007";
+$hobby = $_SESSION["hobby"] ?? "Mancing, Main game, Baca novel, Menggambar, Memasak ";
+$pasangan = $_SESSION["pasangan"] ?? "Tidak ada karena kurang beruntung ";
+$pekerjaan = $_SESSION["pekerjaan"] ?? "Tidak ada";
+$namaorangtua = $_SESSION["namaorangtua"] ?? "Abdul Salam dan Meidia";
+$kakak = $_SESSION["kakak"] ?? "Tidak ada";
+$adik = $_SESSION["adik"] ?? "Muhammad Abbas Khairan";
 
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
+$sesnama = $_SESSION["sesnama"] ?? "";
+$sesemail = $_SESSION["sesemail"] ?? "";
+$sespesan = $_SESSION["sespesan"] ?? "";
 ?>
 
 <!DOCTYPE html>
@@ -102,31 +102,18 @@ endif;
       </section>
 
       <section id="about">
-        <?php
-        $nim = "2511500056";
-        $nama = "Muhammad Arkan Ramadhan &#128526;";
-        $tempatlahir = "Mentok";
-        $tanggallahir = "30 September 2007";
-        $hobby = "Mancing, Main game, Baca novel, Menggambar, Memasak &#127926;";
-        $pasangan = "Tidak ada karena kurang beruntung &hearts;";
-        $pekerjaaan = "Tidak ada";
-        $namaorangtua = "Abdul Salam dan Meidia";
-        $kakak = "Tidak ada";
-        $adik = "Muhammad Abbas Khairan";
-        ?>
-        <h2>Tentang Saya</h2>
-        <p><strong>NIM:</strong> <?php echo $nim ?></p>
-        <p><strong>Nama Lengkap:</strong> <?php echo $nama ?></p>
-        <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
-        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggallahir ?></p>
-        <p><strong>Hobby:</strong> <?php echo $hobby ?></p>
-        <p><strong>Pasangan:</strong> <?php echo $pasangan ?></p>
-        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaaan ?></p>
-        <p><strong>Nama Orang Tua:</strong> <?php echo $namaorangtua ?></p>
-        <p><strong>Nama Kakak:</strong> <?php echo $kakak ?></p>
-        <p><strong>Nama Adik:</strong> <?php echo $adik ?></p>
-        <p><strong>&#9786;</strong> Smiley!</p>
-      </section>
+       <h2>Tentang Saya</h2>
+      <p><strong>NIM:</strong> <?= htmlspecialchars($nim) ?></p>
+      <p><strong>Nama Lengkap:</strong> <?= htmlspecialchars($nama) ?></p>
+      <p><strong>Tempat Lahir:</strong> <?= htmlspecialchars($tempatlahir) ?></p>
+      <p><strong>Tanggal Lahir:</strong> <?= htmlspecialchars($tanggallahir) ?></p>
+      <p><strong>Hobby:</strong> <?= htmlspecialchars($hobby) ?></p>
+      <p><strong>Pasangan:</strong> <?= htmlspecialchars($pasangan) ?></p>
+      <p><strong>Pekerjaan:</strong> <?= htmlspecialchars($pekerjaan) ?></p>
+      <p><strong>Nama Orang Tua:</strong> <?= htmlspecialchars($namaorangtua) ?></p>
+      <p><strong>Nama Kakak:</strong> <?= htmlspecialchars($kakak) ?></p>
+      <p><strong>Nama Adik:</strong> <?= htmlspecialchars($adik) ?></p>
+    </section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>

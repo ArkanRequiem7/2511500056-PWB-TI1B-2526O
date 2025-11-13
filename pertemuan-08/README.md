@@ -11,4 +11,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>Mengunduh bahan uts dan copy ke pertemuan 08</li>
   <li>membuat section entry data mahasiswa</li>
   <li>Styling Section Entry data mahasiswa</li>
+  <li>membuat data dikirim dengan method POST</li>
 </ol>

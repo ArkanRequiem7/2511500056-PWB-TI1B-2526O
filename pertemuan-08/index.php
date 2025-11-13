@@ -100,18 +100,19 @@ $sespesan = $_SESSION["sespesan"] ?? "";
     <section id="contact">
       <h2>Kontak Kami</h2>
       <form action="proses.php" method="POST">
-        <label for="txtNama">Nama:</label>
-        <input type="text" id="txtNama" name="txtNama" value="<?= htmlspecialchars($sesnama) ?>" required>
+        <label for="txtNama"><span>Nama:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
 
-        <label for="txtEmail">Email:</label>
-        <input type="email" id="txtEmail" name="txtEmail" value="<?= htmlspecialchars($sesemail) ?>" required>
+        <label for="txtEmail"><span>Email:</span>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        </label>
 
-        <label for="txtPesan">Pesan Anda:</label>
-        <textarea id="txtPesan" name="txtPesan" rows="4" required><?= htmlspecialchars($sespesan) ?></textarea>
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-      </form>
+        <label for="txtPesan"><span>Pesan Anda:</span>
+          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+          <small id="charCount">0/200 karakter</small>
+        </label>
+</form>
 
       <?php if (!empty($sesnama)): ?>
         <hr>
@@ -127,7 +128,8 @@ $sespesan = $_SESSION["sespesan"] ?? "";
     <p>&copy; 2025 Muhammad Arkan Ramadhan [2511500056]</p>
   </footer>
 
-  <script>
+<script src="script.js"></script>
+<script>
     document.getElementById("menuToggle").addEventListener("click", function() {
       document.querySelector("nav ul").classList.toggle("active");
     });

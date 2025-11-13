@@ -11,6 +11,9 @@ $_SESSION["pekerjaan"] = $_POST["pekerjaan"] ?? "";
 $_SESSION["namaorangtua"] = $_POST["namaorangtua"] ?? "";
 $_SESSION["kakak"] = $_POST["kakak"] ?? "";
 $_SESSION["adik"] = $_POST["adik"] ?? "";
+$_SESSION["nama"] = $_GET["txtNama"];
+$_SESSION["email"] = $_GET["txtEmail"];
+$_SESSION["pesan"] = $_GET["txtPesan"];
 
 header("Location: index.php#about");
 exit;

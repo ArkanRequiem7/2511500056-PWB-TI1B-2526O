@@ -1,20 +1,12 @@
 <?php
 session_start();
 
-$_SESSION["nim"] = $_POST["nim"] ?? "";
-$_SESSION["Nama"] = $_POST["Nama"] ?? "";
-$_SESSION["tempatlahir"] = $_POST["tempatlahir"] ?? "";
-$_SESSION["tanggallahir"] = $_POST["tanggallahir"] ?? "";
-$_SESSION["hobby"] = $_POST["hobby"] ?? "";
-$_SESSION["pasangan"] = $_POST["pasangan"] ?? "";
-$_SESSION["pekerjaan"] = $_POST["pekerjaan"] ?? "";
-$_SESSION["namaorangtua"] = $_POST["namaorangtua"] ?? "";
-$_SESSION["kakak"] = $_POST["kakak"] ?? "";
-$_SESSION["adik"] = $_POST["adik"] ?? "";
-$_SESSION["nama"] = $_GET["txtNama"];
-$_SESSION["email"] = $_GET["txtEmail"];
-$_SESSION["pesan"] = $_GET["txtPesan"];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $_SESSION["sesnama"] = $_POST["txtNama"] ?? "";
+    $_SESSION["sesemail"] = $_POST["txtEmail"] ?? "";
+    $_SESSION["sespesan"] = $_POST["txtPesan"] ?? "";
+}
 
-header("Location: index.php#about");
+header("Location: index.php#contact");
 exit;
 ?>

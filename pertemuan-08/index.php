@@ -112,6 +112,8 @@ $sespesan = $_SESSION["sespesan"] ?? "";
           <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
           <small id="charCount">0/200 karakter</small>
         </label>
+        <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
 </form>
 
       <?php if (!empty($sesnama)): ?>

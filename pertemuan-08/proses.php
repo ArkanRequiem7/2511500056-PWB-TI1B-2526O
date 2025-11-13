@@ -2,7 +2,7 @@
 session_start();
 
 $_SESSION["nim"] = $_POST["nim"] ?? "";
-$_SESSION["nama"] = $_POST["nama"] ?? "";
+$_SESSION["Nama"] = $_POST["Nama"] ?? "";
 $_SESSION["tempatlahir"] = $_POST["tempatlahir"] ?? "";
 $_SESSION["tanggallahir"] = $_POST["tanggallahir"] ?? "";
 $_SESSION["hobby"] = $_POST["hobby"] ?? "";

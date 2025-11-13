@@ -43,43 +43,41 @@ endif;
   </header>
 
   <main>
-    <section id="home">
-      <h2>Selamat Datang</h2>
-      <?php
-      echo "halo dunia!<br>";
-      echo "nama saya hadi";
-      ?>
-      <p>Ini contoh paragraf HTML.</p>
-    </section>
-
-    <section id="about">
-      <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
-      $tempat = "Jebus";
-      ?>
-      <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
+<section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Ini contoh paragraf HTML.</p>
         <?php
-        echo $NIM;
+        echo "Halo Dunia!<br>";
+        echo "Muhammad Arkan Ramadhan";
         ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
+      </section>
+
+      <section id="about">
         <?php
-        echo $Nama;
-        ?> &#128526;
-      </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
-    </section>
+        $nim = "2511500056";
+        $nama = "Muhammad Arkan Ramadhan &#128526;";
+        $tempatlahir = "Mentok";
+        $tanggallahir = "30 September 2007";
+        $hobby = "Mancing, Main game, Baca novel, Menggambar, Memasak &#127926;";
+        $pasangan = "Tidak ada karena kurang beruntung &hearts;";
+        $pekerjaaan = "Tidak ada";
+        $namaorangtua = "Abdul Salam dan Meidia";
+        $kakak = "Tidak ada";
+        $adik = "Muhammad Abbas Khairan";
+        ?>
+        <h2>Tentang Saya</h2>
+        <p><strong>NIM:</strong> <?php echo $nim ?></p>
+        <p><strong>Nama Lengkap:</strong> <?php echo $nama ?></p>
+        <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggallahir ?></p>
+        <p><strong>Hobby:</strong> <?php echo $hobby ?></p>
+        <p><strong>Pasangan:</strong> <?php echo $pasangan ?></p>
+        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaaan ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?php echo $namaorangtua ?></p>
+        <p><strong>Nama Kakak:</strong> <?php echo $kakak ?></p>
+        <p><strong>Nama Adik:</strong> <?php echo $adik ?></p>
+        <p><strong>&#9786;</strong> Smiley!</p>
+      </section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
@@ -117,7 +115,7 @@ endif;
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Muhammad Arkan Ramadhan [2511500056]</p>
   </footer>
 
   <script src="script.js"></script>

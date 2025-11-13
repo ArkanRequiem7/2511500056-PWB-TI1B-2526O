@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>Mengunduh bahan uts dan copy ke pertemuan 08</li>
   <li>menyesuaikan data sesuai dengan data saya</li>
+  <li>membuat section entry data mahasiswa</li>
 </ol>

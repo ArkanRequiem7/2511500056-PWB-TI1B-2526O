@@ -36,11 +36,60 @@ endif;
     <nav>
       <ul>
         <li><a href="#home">Beranda</a></li>
+        <li><a href="#entrydata">Entry Data</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </nav>
   </header>
+
+  <main>
+    <section id="home">
+      <h2>Selamat Datang</h2>
+      <p>Ini contoh paragraf HTML.</p>
+      <?php
+      echo "Halo Dunia!<br>";
+      echo "Muhammad Arkan Ramadhan";
+      ?>
+    </section>
+
+    <section id="entrydata">
+      <h2>Entry Data Mahasiswa</h2>
+      <form action="proses_data.php" method="POST">
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label for="tempatlahir">Tempat Lahir:</label>
+        <input type="text" id="tempatlahir" name="tempatlahir" placeholder="Masukkan tempat lahir" required>
+
+        <label for="tanggallahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggallahir" name="tanggallahir" required>
+
+        <label for="hobby">Hobi:</label>
+        <input type="text" id="hobby" name="hobby" placeholder="Masukkan hobi" required>
+
+        <label for="pasangan">Pasangan:</label>
+        <input type="text" id="pasangan" name="pasangan" placeholder="Masukkan pasangan" required>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Masukkan pekerjaan" required>
+
+        <label for="namaorangtua">Nama Orang Tua:</label>
+        <input type="text" id="namaorangtua" name="namaorangtua" placeholder="Masukkan nama orang tua" required>
+
+        <label for="kakak">Nama Kakak:</label>
+        <input type="text" id="kakak" name="kakak" placeholder="Masukkan nama kakak">
+
+        <label for="adik">Nama Adik:</label>
+        <input type="text" id="adik" name="adik" placeholder="Masukkan nama adik">
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+    </section>
 
   <main>
 <section id="home">

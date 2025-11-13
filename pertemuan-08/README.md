@@ -12,4 +12,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat section entry data mahasiswa</li>
   <li>Styling Section Entry data mahasiswa</li>
   <li>membuat data dikirim dengan method POST</li>
+  <li>merubah file proses.php agar menerima data yang dikirim</li>
 </ol>

@@ -15,4 +15,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>merubah file proses.php agar menerima data yang dikirim</li>
   <li>membuat file post_index.php</li>
   <li>membuat file hancur.php<li>
+  <li>membuat file post_proses.php</li>
 </ol>

@@ -3,7 +3,7 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $nim = $_POST["nim"] ?? "";
-  $nama = $_POST["nama"] ?? "";
+  $Nama = $_POST["Nama"] ?? "";
   $tempatlahir = $_POST["tempatlahir"] ?? "";
   $tanggallahir = $_POST["tanggallahir"] ?? "";
   $hobby = $_POST["hobby"] ?? "";
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $adik = $_POST["adik"] ?? "";
 
   $_SESSION["nim"] = $nim;
-  $_SESSION["nama"] = $nama;
+  $_SESSION["Nama"] = $Nama;
   $_SESSION["tempatlahir"] = $tempatlahir;
   $_SESSION["tanggallahir"] = $tanggallahir;
   $_SESSION["hobby"] = $hobby;
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $nim = $_SESSION["nim"] ?? "2511500056";
-$nama = $_SESSION["nama"] ?? "Muhammad Arkan Ramadhan &#128526;";
+$Nama = $_SESSION["Nama"] ?? "Muhammad Arkan Ramadhan &#128526;";
 $tempatlahir = $_SESSION["tempatlahir"] ?? "Mentok";
 $tanggallahir = $_SESSION["tanggallahir"] ?? "30 September 2007";
 $hobby = $_SESSION["hobby"] ?? "Mancing, Main game, Baca novel, Menggambar, Memasak &#127926;";
@@ -82,8 +82,8 @@ $sespesan = $_SESSION["sespesan"] ?? "";
         <label for="nim">NIM:</label>
         <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
 
-        <label for="nama">Nama Lengkap:</label>
-        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        <label for="Nama">Nama Lengkap:</label>
+        <input type="text" id="Nama" name="Nama" placeholder="Masukkan Nama lengkap" required>
 
         <label for="tempatlahir">Tempat Lahir:</label>
         <input type="text" id="tempatlahir" name="tempatlahir" placeholder="Masukkan tempat lahir" required>
@@ -127,7 +127,7 @@ $sespesan = $_SESSION["sespesan"] ?? "";
       <section id="about">
        <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong> <?= htmlspecialchars($nim) ?></p>
-      <p><strong>Nama Lengkap:</strong> <?= htmlspecialchars($nama) ?></p>
+      <p><strong>Nama Lengkap:</strong> <?= htmlspecialchars($Nama) ?></p>
       <p><strong>Tempat Lahir:</strong> <?= htmlspecialchars($tempatlahir) ?></p>
       <p><strong>Tanggal Lahir:</strong> <?= htmlspecialchars($tanggallahir) ?></p>
       <p><strong>Hobby:</strong> <?= htmlspecialchars($hobby) ?></p>

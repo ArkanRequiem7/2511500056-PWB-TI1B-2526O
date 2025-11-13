@@ -51,7 +51,8 @@ header li a:active {
 
 #home:target~header nav a[href="#home"],
 #about:target~header nav a[href="#about"],
-#contact:target~header nav a[href="#contact"] {
+#contact:target~header nav a[href="#contact"],
+#entrydata:target~header nav a[href="#entrydata"] {
   background: #fff;
   color: #003366;
   font-weight: bold;
@@ -61,7 +62,8 @@ header li a:active {
 
 #home,
 #about,
-#contact {
+#contact,
+#entrydata {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -72,7 +74,8 @@ header li a:active {
 
 #home h2,
 #about h2,
-#contact h2 {
+#contact h2,
+#entrydata h2 {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -114,6 +117,74 @@ header li a:active {
   font-weight: normal;
   margin: 0;
   box-sizing: border-box;
+}
+
+#entrydata form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#entrydata label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 6px 0;
+}
+
+#entrydata label span {
+  min-width: 180px;
+  color: #003366;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 16px;
+}
+
+#entrydata input,
+#entrydata textarea,
+#entrydata select {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  color: #000;
+  font-weight: normal;
+}
+
+#entrydata button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+#entrydata button[type="submit"] {
+  background-color: #003366;
+  color: #fff;
+  font-weight: 600;
+}
+
+#entrydata button[type="reset"] {
+  background-color: #b4b4b4;
+  color: #272727;
+  font-weight: 500;
+}
+
+#entrydata button[type="submit"]:hover {
+  background-color: #0379ee;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#entrydata button[type="reset"]:hover {
+  background-color: #cccccc;
+  transform: translateY(-1px);
 }
 
 #contact button {
@@ -216,13 +287,15 @@ footer {
   }
 
   #about p,
-  #contact label {
+  #contact label,
+  #entrydata label {
     flex-direction: column;
     align-items: flex-start;
   }
 
   #about strong,
-  #contact label>span {
+  #contact label>span,
+  #entrydata label span {
     text-align: left;
     padding-right: 0;
     margin-bottom: 2px;
@@ -230,7 +303,10 @@ footer {
 
   #contact input,
   #contact textarea,
-  #contact button {
+  #contact button,
+  #entrydata input,
+  #entrydata textarea,
+  #entrydata button {
     width: 100%;
   }
 }

@@ -3,9 +3,7 @@ session_start();
 
 require_once __DIR__ . '/fungsi.php';
 
-$sesnama = $_SESSION["sesnama"] ?? "";
-$sesemail = $_SESSION["sesemail"] ?? "";
-$sespesan = $_SESSION["sespesan"] ?? "";
+$dataContact = $_SESSION["contact"] ?? [];
 
 $dataContact = [
     "nama" => $sesnama,
@@ -149,7 +147,7 @@ $fieldConfigContact = [
         <button type="reset">Batal</button>
       </form>
 
-      <?php if (!empty($sesnama)): ?>
+      <?php if (!empty($dataContact["nama"])): ?>
         <br><hr>
         <h2>Yang menghubungi kami</h2>
         <?= tampilkanBiodata($fieldConfigContact, $dataContact) ?>

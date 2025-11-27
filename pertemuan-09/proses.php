@@ -7,6 +7,8 @@ $arrContact = [
  "pesan" => $_POST["txtPesan"] ?? "",
 ];
 
+$_SESSION["contact"] = $arrContact;
+
 $arrBiodata = [
  "nim" => $_POST["txtNim"] ?? "",
  "nama" => $_POST["txtNmLengkap"] ?? "",

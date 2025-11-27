@@ -21,4 +21,5 @@ associative $fieldConfig</li>
 <li>Tambahkan lagi kode pada fungsi.php untuk menghasilkan tanggal</li>
 <li>Tambahkan lagi kode pada fungsi.php untuk merender hasil atau output biodata</li>
 <li>Mengubah baris kode pada tampilkanbiodata pada index.php</li>
+<li>tambahkan kode untuk menyertakan file fungsi.php dengan kode require_once di index.php</li>
 </ol>

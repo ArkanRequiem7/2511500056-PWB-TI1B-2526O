@@ -13,4 +13,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>Modif sehingga baris kode (10-19) di file proses.php menjadi bentuk array associative</li>
   <li>Modif baris 23-32 di proses.php menjadi array associative</li>
   <li>Modif baris 19-67 dihapus dan meanmbahkan array associative sebelum section #about</li>
+  <li>baris kode baru setelah baris "Tentang Saya" untuk menampilkan array menggunakan looping
+foreach</li>
 </ol>

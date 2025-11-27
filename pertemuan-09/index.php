@@ -5,18 +5,30 @@ require_once __DIR__ . '/fungsi.php';
 
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
+ $sesnama = $_SESSION["sesnama"];
 endif;
 
 $sesemail = "";
 if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
+ $sesemail = $_SESSION["sesemail"];
 endif;
 
 $sespesan = "";
 if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
+ $sespesan = $_SESSION["sespesan"];
 endif;
+
+$dataContact = [
+    "nama" => $sesnama,
+    "email" => $sesemail,
+    "pesan" => $sespesan,
+];
+
+$fieldConfigContact = [
+    "nama" => ["label" => "Nama :", "suffix" => ""],
+    "email" => ["label" => "Email :", "suffix" => ""],
+    "pesan" => ["label" => "Pesan :", "suffix" => ""],
+];
 
 ?>
 

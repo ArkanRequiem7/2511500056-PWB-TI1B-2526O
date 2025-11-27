@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 
 <ol>
   <li>Copy bahan ajar pertemuan 10 ke folder pertemuan 9</li>
+  <li>Modif sehingga baris kode (10-19) di file proses.php menjadi bentuk array associative</li>
 </ol>

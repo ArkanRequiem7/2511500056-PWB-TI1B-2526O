@@ -103,7 +103,7 @@ endif;
 
     </section>
 
-    <?rphp
+    <?php
 $biodata = $_SESSION["biodata"] ?? [];
 
 $fieldConfig = [

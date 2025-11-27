@@ -9,7 +9,7 @@ Kelompok: TI1B<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 
 <ol>
-  <li>Copy bahan ajar pertemuan 10 ke folder pertemuan 9</li>
+  <li>Copy bahan ajar pertemuan 10 ke folder pertemuan 09</li>
   <li>Modif sehingga baris kode (10-19) di file proses.php menjadi bentuk array associative</li>
   <li>Modif baris 23-32 di proses.php menjadi array associative</li>
   <li>Modif baris 19-67 dihapus dan meanmbahkan array associative sebelum section #about</li>
@@ -17,4 +17,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 foreach</li>
 <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array
 associative $fieldConfig</li>
+<li>Membuat file baru di pertemuan 09 fungsi.php</li>
 </ol>

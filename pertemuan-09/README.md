@@ -15,4 +15,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>Modif baris 19-67 dihapus dan meanmbahkan array associative sebelum section #about</li>
   <li>baris kode baru setelah baris "Tentang Saya" untuk menampilkan array menggunakan looping
 foreach</li>
+<li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array
+associative $fieldConfig</li>
 </ol>

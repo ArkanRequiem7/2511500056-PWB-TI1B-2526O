@@ -18,4 +18,5 @@ foreach</li>
 <li>Hapus baris 130-140, karena sudah diakomodir menggunakan perulangan foreach untuk menampilkan isi array
 associative $fieldConfig</li>
 <li>Membuat file baru di pertemuan 09 fungsi.php</li>
+<li>Tambahkan lagi kode pada fungsi.php untuk menghasilkan tanggal</li>
 </ol>

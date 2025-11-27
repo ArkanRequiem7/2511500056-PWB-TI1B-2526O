@@ -163,9 +163,7 @@ $fieldConfigContact = [
       <?php if (!empty($sesnama)): ?>
         <br><hr>
         <h2>Yang menghubungi kami</h2>
-        <p><strong>Nama :</strong> <?php echo $sesnama ?></p>
-        <p><strong>Email :</strong> <?php echo $sesemail ?></p>
-        <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
+        <?= tampilkanBiodata($fieldConfigContact, $dataContact) ?>
       <?php endif; ?>
 
 

@@ -126,7 +126,7 @@ $fieldConfig = [
       <?php foreach ($fieldConfig as $kunci => $metadata): ?>
 <p>
     <strong><?= $metadata["label"] ?></strong>
-    <?= htmlspecialchars(string: $biodata[$kunci] ?? "") ?>
+    <?= htmlspecialchars(string: $biodata[$kunci] ?? "Data Belum Diisi") ?>
     <?= $metadata["suffix"] ?>
 </p>
 <?php endforeach; ?>

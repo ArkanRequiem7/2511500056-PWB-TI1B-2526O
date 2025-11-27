@@ -20,4 +20,5 @@ associative $fieldConfig</li>
 <li>Membuat file baru di pertemuan 09 fungsi.php</li>
 <li>Tambahkan lagi kode pada fungsi.php untuk menghasilkan tanggal</li>
 <li>Tambahkan lagi kode pada fungsi.php untuk merender hasil atau output biodata</li>
+<li>Mengubah baris kode pada tampilkanbiodata pada index.php</li>
 </ol>

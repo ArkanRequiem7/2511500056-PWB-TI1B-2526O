@@ -10,3 +10,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 
 <ol>
 <li>Download dan extract file bahan ajar kee pertemuan 10</li>
+<li>Membuat file baru koneksi.php</li>

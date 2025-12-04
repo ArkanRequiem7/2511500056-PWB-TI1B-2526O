@@ -14,3 +14,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>Login ke phpmyadmin dan membuat database db_pwd2025</li>
 <li>Membuat tabel tamu pada database phpmyadmin</li>
 <li>membuat file read.php untuk mengubah fungsi PHP yang mengubah karakter newline (\n) menjadi tag HTML br</li>
+<li>merecord data pada tabel tamu secara manual</li>

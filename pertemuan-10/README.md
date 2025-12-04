@@ -16,3 +16,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>membuat file read.php untuk mengubah fungsi PHP yang mengubah karakter newline (\n) menjadi tag HTML br</li>
 <li>merecord data pada tabel tamu secara manual</li>
 <li>membuat file read_inc.php</li>
+<li>mengubah kode index.php pada baris 146</li>

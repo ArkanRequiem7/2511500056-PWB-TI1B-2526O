@@ -19,3 +19,4 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>mengubah kode index.php pada baris 146</li>
 <li>mengubah kode index.php Hapus baris 133-141</li>
 <li>export localhost.sql</li>
+</ol>

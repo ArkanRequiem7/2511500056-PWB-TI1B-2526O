@@ -14,4 +14,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>Tambah penangkap pesan sukses/gagal (flash message dari SESSION)</li>
 <li>Menambahkan Flash messagge di baris 123-133 di index.php</li>
 <li>Tampilkan nilai lama dari form untuk antisipasi jika error, pengguna cukup mengubah data yang sudah ada</li>
+<li>rewrite post.php</li>
+<li>Validasi (tidak boleh kosong, email valid)</li>
 </ol>

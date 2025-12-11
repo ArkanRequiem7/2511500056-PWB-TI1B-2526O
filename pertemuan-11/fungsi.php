@@ -1,15 +1,7 @@
 <?php
 function bersihkan($str)
 {
-    $str = trim($str);
-    $str = htmlspecialchars($str);
-    return $str;
-}
-
-function redirect_ke($url)
-{
-  header("location: " . $url);
-  exit();
+  return htmlspecialchars(trim($str));
 }
 
 function tidakKosong($str)
@@ -34,4 +26,3 @@ function tampilkanBiodata($conf, $arr)
   }
   return $html;
 }
-?>

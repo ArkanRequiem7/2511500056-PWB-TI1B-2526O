@@ -120,9 +120,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="proses.php" method="POST">
-
-    <?php if (!empty($flash_sukses)): ?>
+      <form action="proses.php" method="POST"> <?php if (!empty($flash_sukses)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
             <?= $flash_sukses; ?>
         </div>
@@ -134,9 +132,7 @@ require_once __DIR__ . '/fungsi.php';
         </div>
         <?php endif; ?>
 
-      <form action="proses.php" method="POST">
-
-        <label for="txtNama"><span>Nama:</span>
+      <form action="proses.php" method="POST"> <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"
           required autocomplete="name"
           value="<?= isset($old['nama']) ? htmlspecialchars($old['nama']) : '' ?>">
@@ -148,7 +144,11 @@ require_once __DIR__ . '/fungsi.php';
           value="<?= isset($old['email']) ? htmlspecialchars($old['email']) : '' ?>">
 
         </label>
-
+        
+        <label for="txtCaptcha"><span>Buktikan Anda bukan robot (2 + 3 = ?):</span>
+          <input type="number" id="txtCaptcha" name="txtCaptcha" placeholder="Masukkan jawaban"
+          required value="<?= isset($old['captcha']) ? htmlspecialchars($old['captcha']) : '' ?>">
+        </label>
         <label for="txtPesan"><span>Pesan Anda:</span>
           <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..."
           required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>

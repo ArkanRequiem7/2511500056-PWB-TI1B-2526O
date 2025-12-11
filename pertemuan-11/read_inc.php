@@ -5,6 +5,7 @@ $fieldContact = [
     "nama" => ["label" => "Nama:", "suffix" => ""],
     "email" => ["label" => "Email:", "suffix" => ""],
     "pesan" => ["label" => "Pesan Anda:", "suffix" => ""],
+    "dcreated" => ["label" => "Created At:", "suffix" => ""],
 ];
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
@@ -20,6 +21,7 @@ if (!$q) {
             "nama" => $row['cnama'] ?? "",
             "email" => $row['cemail'] ?? "",
             "pesan" => $row['cpesan'] ?? "",
+            "dcreated" => $row['dcreated'] ?? "",
         ];
         echo tampilkanBiodata($fieldContact, $arrContact);
     }

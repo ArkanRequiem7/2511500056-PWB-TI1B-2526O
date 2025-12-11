@@ -12,4 +12,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>Copy Pertemuan 10 ke pertemuan 10 sebagai bahan ajar</li>
 <li>Update fungsi.php untuk helper redirect sederhana (pola PRG)</li>
 <li>Tambah penangkap pesan sukses/gagal (flash message dari SESSION)</li>
+<li>Menambahkan Flash messagge di baris 123-133 di index.php</li>
 </ol>

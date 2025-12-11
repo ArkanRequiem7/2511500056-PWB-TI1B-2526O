@@ -16,4 +16,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>Tampilkan nilai lama dari form untuk antisipasi jika error, pengguna cukup mengubah data yang sudah ada</li>
 <li>rewrite post.php</li>
 <li>Validasi (tidak boleh kosong, email valid)</li>
+<li>INSERT tbl_tamu dengan prepared statement mysqli dan simpan pesan sukses/gagal ke $_SESSION serta
+redirect balik ke index.php#contact</li>
 </ol>

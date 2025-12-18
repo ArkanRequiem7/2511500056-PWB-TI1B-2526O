@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 
 <ol>
 <li>Copy Pertemuan 11 sebagai bahan pertemuan 12</li>
+<li>Menambahkan tombol edit di read.php</li>
 </ol>

@@ -13,4 +13,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <li>Menambahkan tombol edit di read.php</li>
 <li>Buat file baru dengan nama edit.php di folder pertemuan-12 untuk menampilkan form dengan data lama yang
 dibaca berdasarkan cid (prefill form)</li>
+<li>Buat file baru dengan nama proses_update.php di dalam folder pertemuan-12 untuk menyimpan perubahan
+menggunakan query UPDATE dan prepared statement.</li>
 </ol>

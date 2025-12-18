@@ -41,14 +41,13 @@ $no = 1;
 
 <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
-        
-        <td><?= $no++; ?></td> 
+        <td><?= $no++; ?></td>
         <td><a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a></td>
         <td><?= $row['cid']; ?></td>
         <td><?= htmlspecialchars($row['cnama']); ?></td>
         <td><?= htmlspecialchars($row['cemail']); ?></td>
         <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
-        <td><?= $row['dcreated'] ?? '-'; ?></td> 
+        <td><?= isset($row['dcreated']) ? $row['dcreated'] : '-'; ?></td> 
     </tr>
 <?php endwhile; ?>
 </table>

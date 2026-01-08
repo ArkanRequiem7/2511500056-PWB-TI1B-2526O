@@ -11,4 +11,5 @@ NIM: 2511500056<br>
 <li>Menambahkan parameter cid untuk link delete di read.php</li>
 <li>Memperbaiki file proses_delete.php agar menggunakan parameter cid</li>
 <li>Menambahkan konfirmasi penghapusan di read.php untuk link delete</li>
+<li>Menambahkan nama yang akan dikonfirmasi untuk di hapus di read.php untuk link delete</li>
 </ol>

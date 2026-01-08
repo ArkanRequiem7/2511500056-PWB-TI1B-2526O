@@ -5,3 +5,5 @@ Nama: Saya Muhammad Arkan Ramadhan<br>
 NIM: 2511500056<br>
 <ol>
 <li>import sql bahan praktikum pertemuan-13</li>
+<li>Menambah link delete untuk ke file proses_update.php</li> 
+</ol>

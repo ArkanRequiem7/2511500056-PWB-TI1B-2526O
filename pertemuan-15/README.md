@@ -8,4 +8,5 @@ NIM: 2511500056<br>
 <li>update proses.php untuk insert ke tabel baru dengan validasi, sanitasi, PRG</li>
 <li>update read.php agar menampilkan hasil record biodata mahasiswa</li>
 <li>membuat file edit_biodata.php untuk merubah biodata</li>
+<li>membuat file proses_update_biodata.php untuk memproses biodata yang sudah diupdate</li>
 </ol>

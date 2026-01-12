@@ -6,4 +6,5 @@ NIM: 2511500056<br>
 <ol>
 <li>Membuat tabel baru untuk biodata mahasiswa</li>
 <li>update proses.php untuk insert ke tabel baru dengan validasi, sanitasi, PRG</li>
+<li>update read.php agar menampilkan hasil record biodata mahasiswa</li>
 </ol>

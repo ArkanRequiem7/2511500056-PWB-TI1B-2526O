@@ -7,6 +7,7 @@ NIM: 2511500056<br>
 <li>Membuat tabel baru untuk biodata mahasiswa</li>
 <li>update proses.php untuk insert ke tabel baru dengan validasi, sanitasi, PRG</li>
 <li>update read.php agar menampilkan hasil record biodata mahasiswa</li>
+<li>mengatur bagian "NIM" agar menjadi read only</li>
 <li>membuat file edit_biodata.php untuk merubah biodata</li>
 <li>membuat file proses_update_biodata.php untuk memproses biodata yang sudah diupdate</li>
 <li>update file proses_update.php untuk kembali ke read.php jika selesai diedit</li>

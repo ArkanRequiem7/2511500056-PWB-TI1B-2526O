@@ -3,6 +3,120 @@ session_start();
 require __DIR__ . './koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
+<?php
+session_start();
+require __DIR__ . '/koneksi.php';
+require_once __DIR__ . '/fungsi.php';
+
+// ---------------------------------------------------------
+// PROSES BIODATA MAHASISWA (section #biodata)
+// ---------------------------------------------------------
+if (isset($_POST['txtNim'])) {
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        $_SESSION['flasherror'] = 'Akses tidak valid.';
+        redirectke('index.php#biodata');
+    }
+
+    // Ambil & sanitasi data
+    $nim        = bersihkan($_POST['txtNim']       ?? '');
+    $nama       = bersihkan($_POST['txtNmLengkap'] ?? '');
+    $tempat     = bersihkan($_POST['txtT4Lhr']     ?? '');
+    $tanggal    = bersihkan($_POST['txtTglLhr']    ?? '');
+    $hobi       = bersihkan($_POST['txtHobi']      ?? '');
+    $pasangan   = bersihkan($_POST['txtPasangan']  ?? '');
+    $kerja      = bersihkan($_POST['txtKerja']     ?? '');
+    $ortu       = bersihkan($_POST['txtNmOrtu']    ?? '');
+    $kakak      = bersihkan($_POST['txtNmKakak']   ?? '');
+    $adik       = bersihkan($_POST['txtNmAdik']    ?? '');
+
+    // Validasi sederhana
+    $errors = [];
+
+    if (!$nim)      $errors[] = 'NIM wajib diisi.';
+    if (!$nama)     $errors[] = 'Nama Lengkap wajib diisi.';
+    if (!$tempat)   $errors[] = 'Tempat Lahir wajib diisi.';
+    if (!$tanggal)  $errors[] = 'Tanggal Lahir wajib diisi.';
+    if (!$hobi)     $errors[] = 'Hobi wajib diisi.';
+    if (!$pasangan) $errors[] = 'Pasangan wajib diisi.';
+    if (!$kerja)    $errors[] = 'Pekerjaan wajib diisi.';
+    if (!$ortu)     $errors[] = 'Nama Orang Tua wajib diisi.';
+    if (!$kakak)    $errors[] = 'Nama Kakak wajib diisi.';
+    if (!$adik)     $errors[] = 'Nama Adik wajib diisi.';
+
+    // Contoh validasi tambahan
+    if (mb_strlen($nim) < 5) {
+        $errors[] = 'NIM minimal 5 karakter.';
+    }
+
+    // Jika ada error -> simpan nilai lama + error, lalu redirect (PRG)
+    if (!empty($errors)) {
+        $_SESSION['old'] = [
+            'nim'       => $nim,
+            'nama'      => $nama,
+            'tempat'    => $tempat,
+            'tanggal'   => $tanggal,
+            'hobi'      => $hobi,
+            'pasangan'  => $pasangan,
+            'kerja'     => $kerja,
+            'ortu'      => $ortu,
+            'kakak'     => $kakak,
+            'adik'      => $adik,
+        ];
+
+        $_SESSION['flasherror'] = implode('<br>', $errors);
+        redirectke('index.php#biodata');
+    }
+
+    // INSERT menggunakan prepared statement
+    $stmt = mysqli_prepare(
+        $conn,
+        'INSERT INTO tblbiodata_mhs 
+        (nim, nama_lengkap, tempat_lahir, tanggal_lahir, hobi, pasangan, pekerjaan, nama_ortu, nama_kakak, nama_adik)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+
+    if (!$stmt) {
+        $_SESSION['flasherror'] = 'Terjadi kesalahan sistem.';
+        redirectke('index.php#biodata');
+    }
+
+    mysqli_stmt_bind_param(
+        $stmt,
+        'ssssssssss',
+        $nim,
+        $nama,
+        $tempat,
+        $tanggal,
+        $hobi,
+        $pasangan,
+        $kerja,
+        $ortu,
+        $kakak,
+        $adik
+    );
+
+    if (mysqli_stmt_execute($stmt)) {
+        unset($_SESSION['old']);
+        $_SESSION['flashsukses'] = 'Biodata berhasil disimpan.';
+        redirectke('index.php#about'); // biodata ditampilkan di section about
+    } else {
+        $_SESSION['old'] = [
+            'nim'       => $nim,
+            'nama'      => $nama,
+            'tempat'    => $tempat,
+            'tanggal'   => $tanggal,
+            'hobi'      => $hobi,
+            'pasangan'  => $pasangan,
+            'kerja'     => $kerja,
+            'ortu'      => $ortu,
+            'kakak'     => $kakak,
+            'adik'      => $adik,
+        ];
+        $_SESSION['flasherror'] = 'Biodata gagal disimpan. Silakan coba lagi.';
+        redirectke('index.php#biodata');
+    }
+}
+
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';

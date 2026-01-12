@@ -79,7 +79,7 @@ if (!$stmt) {
 
 mysqli_stmt_bind_param(
     $stmt,
-    "sssssssssI",
+    "sssssssssi",
     $nama,
     $tempat,
     $tanggal,
@@ -91,3 +91,25 @@ mysqli_stmt_bind_param(
     $adik,
     $id
 );
+
+if (mysqli_stmt_execute($stmt)) {
+    unset($_SESSION['old']);
+    $_SESSION['flash_sukses'] = 'Data biodata sudah diperbaharui.';
+    redirect_ke('read.php');  // PRG: kembali ke file pembaca
+} else {
+    $_SESSION['old'] = [
+        'nama'     => $nama,
+        'tempat'   => $tempat,
+        'tanggal'  => $tanggal,
+        'hobi'     => $hobi,
+        'pasangan' => $pasangan,
+        'kerja'    => $kerja,
+        'ortu'     => $ortu,
+        'kakak'    => $kakak,
+        'adik'     => $adik,
+    ];
+    $_SESSION['flash_error'] = 'Data biodata gagal diperbaharui. Silakan coba lagi.';
+    redirect_ke('edit_biodata.php?id=' . (int)$id);
+}
+
+mysqli_stmt_close($stmt);

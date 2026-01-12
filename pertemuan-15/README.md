@@ -10,4 +10,5 @@ NIM: 2511500056<br>
 <li>membuat file edit_biodata.php untuk merubah biodata</li>
 <li>membuat file proses_update_biodata.php untuk memproses biodata yang sudah diupdate</li>
 <li>update file proses_update.php untuk kembali ke read.php jika selesai diedit</li>
+<li>update file proses_update_biodata agar menampilkan record yang di update</li>
 </ol>

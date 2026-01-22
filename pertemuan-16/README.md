@@ -5,4 +5,5 @@ Nama: Saya Muhammad Arkan Ramadhan<br>
 NIM: 2511500056<br>
 <ol>
 <li>copy bahan UAS dari dosen ke pertemuan 16</li>
+<li>Membuat Tabel Biodata Pengunjung di menggunakan sql</li>
 </ol>

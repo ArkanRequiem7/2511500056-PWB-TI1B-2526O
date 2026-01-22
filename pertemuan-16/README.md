@@ -7,7 +7,7 @@ NIM: 2511500056<br>
 <li>copy bahan UAS dari dosen ke pertemuan 16</li>
 <li>Membuat Tabel Biodata Pengunjung di menggunakan sql</li>
 <li>membuat update file proses.php lengkap dengan validasi, sanitasi, PRG, dan insert</li>
-<li>Ubah form action di index.php agar terhubung dengan proses_biodata.php</li>
+<li></li>
 <li>Membuat file pembaca yaitu read_biodata.php agar record data ditampilkan</li>
 <li>Membuat file edit_biodata.php untuk menampilkan form edit</li>
 </ol>

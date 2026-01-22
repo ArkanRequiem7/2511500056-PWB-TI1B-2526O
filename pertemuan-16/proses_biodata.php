@@ -36,10 +36,17 @@ if (mb_strlen($nama) < 3) {
     $errors[] = 'Nama pengunjung minimal 3 karakter.';
 }
 
-$dt = DateTime::createFromFormat('Y-m-d', $tanggal);
-if (!$dt || $dt->format('Y-m-d') !== $tanggal) {
-    $errors[] = 'Format tanggal kunjungan tidak valid. Gunakan format YYYY-MM-DD.';
+if (!empty($tanggal)) {
+    $dt = DateTime::createFromFormat('d/m/Y', $tanggal);
+    if (!$dt) {
+        $errors[] = 'Format tanggal kunjungan tidak valid. Gunakan format DD/MM/YYYY.';
+    } else {
+        $tanggal = $dt->format('Y-m-d');
+    }
+} else {
+    $errors[] = 'Tanggal kunjungan wajib diisi.';
 }
+
 
 if (!empty($errors)) {
     $_SESSION['old_biodata'] = [

@@ -11,4 +11,5 @@ NIM: 2511500056<br>
 <li>File Proses Hapus (proses_delete_biodata.php) File ini menangani penghapusan data berdasarkan ID yang dikirim melalui link hapus di atas.</li>
 <li>Menambahkan file edit_biodata.php agar bisa di edit record datanya</li>
 <li>Membuat file proses_update_biodata.php agar bisa memproses data yang telah di update</li>
+<li>Membuat file proses_delete_biodata.php agar bisa menghapus record data yang ingin dihapus</li>
 </ol>

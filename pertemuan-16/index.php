@@ -40,7 +40,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="biodata">
       <h2>Biodata Pengunjung</h2>
-      <form action="proses_biodata.php" method="POST">
+      <form action="proses.php" method="POST">
 
         <label for="txtKodePen"><span>Kode Pengunjung:</span>
           <input type="text" id="txtKodePen" name="txtKodePen" placeholder="Masukkan Kode Pengunjung" required>
@@ -49,13 +49,6 @@ require_once __DIR__ . '/fungsi.php';
         <label for="txtNmPengunjung"><span>Nama Pengunjung:</span>
           <input type="text" id="txtNmPengunjung" name="txtNmPengunjung" placeholder="Masukkan Nama Pengunjung" required>
         </label>
-
-        <label><span>Tanggal Kunjungan:</span>
-          <input type="text" name="txtTglKunjungan" id="txtTglKunjungan" 
-           value="<?php echo $_SESSION['old_biodata']['tanggal'] ?? ''; ?>" 
-           placeholder="22/01/2026" maxlength="10" required>
-        </label>
-
 
         <label for="txtAlRmh"><span>Alamat Rumah:</span>
           <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>

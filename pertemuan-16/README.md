@@ -9,4 +9,5 @@ NIM: 2511500056<br>
 <li>membuat file proses_biodata.php lengkap dengan validasi, sanitasi, PRG, dan insert</li>
 <li>Ubah form action di index.php agar terhubung dengan proses_biodata.php</li>
 <li>Membuat file pembaca yaitu read_biodata.php agar record data ditampilkan</li>
+<li>Membuat file edit_biodata.php untuk menampilkan form edit</li>
 </ol>

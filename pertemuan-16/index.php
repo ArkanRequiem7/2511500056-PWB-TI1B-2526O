@@ -50,6 +50,13 @@ require_once __DIR__ . '/fungsi.php';
           <input type="text" id="txtNmPengunjung" name="txtNmPengunjung" placeholder="Masukkan Nama Pengunjung" required>
         </label>
 
+        <label><span>Tanggal Kunjungan:</span>
+          <input type="text" name="txtTglKunjungan" id="txtTglKunjungan" 
+           value="<?php echo $_SESSION['old_biodata']['tanggal'] ?? ''; ?>" 
+           placeholder="22/01/2026" maxlength="10" required>
+        </label>
+
+
         <label for="txtAlRmh"><span>Alamat Rumah:</span>
           <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>
         </label>

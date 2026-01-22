@@ -39,12 +39,12 @@ if (mb_strlen($nama) < 3) {
 if (!empty($tanggal)) {
     $dt = DateTime::createFromFormat('d/m/Y', $tanggal);
     if (!$dt) {
-        $errors[] = 'Format tanggal kunjungan tidak valid. Gunakan format DD/MM/YYYY.';
+        $errors[] = "Format tanggal kunjungan tidak valid. Gunakan format DD/MM/YYYY (contoh: 22/01/2026).";
     } else {
         $tanggal = $dt->format('Y-m-d');
     }
 } else {
-    $errors[] = 'Tanggal kunjungan wajib diisi.';
+    $errors[] = "Tanggal kunjungan wajib diisi.";
 }
 
 

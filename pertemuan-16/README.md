@@ -9,4 +9,5 @@ NIM: 2511500056<br>
 <li>membuat update file proses.php lengkap dengan validasi, sanitasi, PRG, dan insert</li>
 <li>Membuat file pembaca yaitu read_biodata.php agar record data ditampilkan</li>
 <li>File Proses Hapus (proses_delete_biodata.php) File ini menangani penghapusan data berdasarkan ID yang dikirim melalui link hapus di atas.</li>
+</li>Menambahkan file edit_biodata.php agar bisa di edit record datanya</li>
 </ol>

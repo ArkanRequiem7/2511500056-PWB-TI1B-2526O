@@ -32,7 +32,11 @@
     <th>Alamat</th>
     <th>Hobi</th>
     <th>Asal SLTA</th>
-  </tr>
+    <th>Pekerjaan</th>
+    <th>Nama Ortu</th>
+    <th>Nama Pacar</th>
+    <th>Nama Mantan</th>
+   </tr>
   <?php $i = 1; ?>
   <?php while ($row = mysqli_fetch_assoc($q)): ?>
     <tr>
@@ -47,6 +51,10 @@
       <td><?= htmlspecialchars($row['alamat']); ?></td>
       <td><?= htmlspecialchars($row['hobi']); ?></td>
       <td><?= htmlspecialchars($row['slta']); ?></td>
+      <td><?= htmlspecialchars($row['pekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['ortu']); ?></td>
+      <td><?= htmlspecialchars($row['pacar']); ?></td>
+      <td><?= htmlspecialchars($row['mantan']); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>
